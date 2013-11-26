@@ -6,6 +6,7 @@ The user specified refinement factor modifies connectors, domains, and blocks. M
 
 * Connector spacing and dimension
 * Domain min or max triangle edge length
+* Diagonalized structured domains
 * T-Rex wall initial spacing
 
 Run either interactively or from the command line, it provides progress information and even additional block diagnostics, assuming block initialization was turned on. When the script finishes, the refined surface and volume grids are saved to the current working directory.
