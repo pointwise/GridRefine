@@ -725,8 +725,8 @@ proc initializeUnstructuredBlocks {} {
       continue
     }
     $unsSolver end
+    unset unsSolver
   }
-  unset unsSolver
 
   # Write out unstructured blocks that could not be initialized due to solver error
   if { [info exists blkError] } {
