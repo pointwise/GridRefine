@@ -138,8 +138,8 @@ proc getAndRedimensionTRexConditions {} {
     set condition [pw::TRexCondition getByName $name]
 
     # If condition exist, adjust spacing (if necessary) and cache it
-    if { $condition ne "" && [$condition getType] ne "Off" } {
-      if { [$condition getType] eq "Wall" } {
+    if { $condition ne "" && [$condition getConditionType] ne "Off" } {
+      if { [$condition getConditionType] eq "Wall" } {
         # Get spacing
         set spc [$condition getSpacing]
 
